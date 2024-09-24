@@ -3,7 +3,7 @@ from typing import List
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
         # We must partition the elements in a way that they are equal to half of the total sum
-        # Furthermore, this total sum must be odd
+        # Furthermore, this total sum must not be odd
 
         if len(nums) == 1: return False
         total = 0
